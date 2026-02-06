@@ -22,4 +22,4 @@ This repo contains a variety of demos showcasing TrustyAI's capabilities within 
 
 ## Acknowledgements
 
-All of this work was made possible with the support from various product teams. We would like to express gratitude to everyone who contributed their time, expertise, and resources to help realize these demos. Thank you!
+All of this work was made possible with the support from various product teams. I would like to express gratitude to everyone who contributed their time, expertise, and resources to help realize these demos. Thank you!
