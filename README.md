@@ -8,8 +8,8 @@ This repo contains a variety of demos showcasing TrustyAI's capabilities within 
 
 ## Contents
 1) [Installing RHOAI and TrustyAI](1-Installation/README.md): How to install Open Data Hub and TrustyAI on your cluster.
-2) [Bias Monitoring](2-BiasMonitoring/README.md): How to use TrustyAI to examine your deployed models for unfair biases.
-3) [Data Drift](3-DataDrift/README.md): How to detect if the production data your models are receiving matches the data they were trained on.
+2) [Bias Monitoring](2-BiasMonitoring/kserve-demo/README.md): How to use TrustyAI to examine your deployed models for unfair biases.
+3) [Data Drift](3-DataDrift/kserve-demo/README.md): How to detect if the production data your models are receiving matches the data they were trained on.
 4) [Guardrails-quickstart-demo](4-Guardrails/guardrails-quickstart-demo/README.md):
 5) [Guardrails-language-detector-demo](4-Guardrails/guardrails-language-detector-demo/README.md):
 6) [Guardrails-pii-llamastack-demo](4-Guardrails/guardrails-pii-llamastack-demo/README.md):
