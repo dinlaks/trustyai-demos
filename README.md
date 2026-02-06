@@ -7,7 +7,7 @@ This repo contains a variety of demos showcasing TrustyAI's capabilities within 
 **Caveat**: These demos are tested and intended to work on OpenShift AI 2.25 and above
 
 ## Contents
-1) [Installing RHOAI and TrustyAI](1-Installation/README.md): How to install Open Data Hub and TrustyAI on your cluster.
+1) [Installing RHOAI and TrustyAI](1-Installation/README.md): How to install OpenShift AI and TrustyAI on your cluster.
 2) [Bias Monitoring](2-BiasMonitoring/kserve-demo/README.md): How to use TrustyAI to examine your deployed models for unfair biases.
 3) [Data Drift](3-DataDrift/kserve-demo/README.md): How to detect if the production data your models are receiving matches the data they were trained on.
 4) [Guardrails-quickstart-demo](4-Guardrails/guardrails-quickstart-demo/README.md):
