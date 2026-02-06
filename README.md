@@ -19,3 +19,7 @@ This repo contains a variety of demos showcasing TrustyAI's capabilities within 
 ## Demos Coming Soon
 8) Anomaly Detection [Coming Soon]: How to identify and log anomalous inbound data, such as to clean or enrich your training data.
 9) Explainability [Coming Soon]: How to get per-point explanations of your models' predictions.
+
+## Acknowledgements
+
+All of this work was made possible with the support from various product teams. We would like to express gratitude to everyone who contributed their time, expertise, and resources to help realize these demos. Thank you!
