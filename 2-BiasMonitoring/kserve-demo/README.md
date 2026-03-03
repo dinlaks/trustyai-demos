@@ -88,6 +88,26 @@ As you can see, our models have not provided particularly useful field names for
 
 Explore the [apply_name_mapping.sh](scripts/apply_name_mapping.sh) script to understand how the payload is structured.
 
+After running the name mapping script, you can verify that the name mapping was successfully applied by requerying the /info endpoint:
+
+curl -H "Authorization: Bearer ${TOKEN}" $TRUSTY_ROUTE/info | jq '.["demo-loan-nn-onnx-alpha"].data | {inputSchema: .inputSchema, outputSchema: .outputSchema}'
+curl -H "Authorization: Bearer ${TOKEN}" $TRUSTY_ROUTE/info | jq '.["demo-loan-nn-onnx-beta"].data | {inputSchema: .inputSchema, outputSchema: .outputSchema}'
+Notice we now have a populated nameMapping:
+
+    "nameMapping": {
+      "customer_data_input-0": "Number of Children",
+      "customer_data_input-1": "Total Income",
+      "customer_data_input-2": "Number of Total Family Members",
+      "customer_data_input-3": "Is Male-Identifying?",
+      "customer_data_input-4": "Owns Car?",
+      "customer_data_input-5": "Owns Realty?",
+      "customer_data_input-6": "Is Partnered?",
+      "customer_data_input-7": "Is Employed?",
+      "customer_data_input-8": "Live with Parents?",
+      "customer_data_input-9": "Age",
+      "customer_data_input-10": "Length of Employment?"
+    }
+
 ## Check Model Fairness
 To compute the model's cumulative fairness up to this point, we can check the `/metrics/group/fairness/spd` endpoint:
 

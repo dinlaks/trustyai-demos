@@ -1,7 +1,7 @@
 # Installing OpenShift AI and TrustyAI
-This guide will walk through installing OpenShift AI 3.X and TrustyAI into your cluster. Starting from a completely
+This guide will walk through installing OpenShift AI 2.25 and TrustyAI into your cluster. Starting from a completely
 blank cluster, you will be left with:
-1) An OpenShift AI 3.X installation
+1) An OpenShift AI 2.25 installation
 2) A namespace to deploy models into
 3) A TrustyAI Operator, to manage all instances of the TrustyAI Service
 4) A TrustyAI Service, to monitor and analyze all the models deployed into your model namespace.
@@ -36,15 +36,15 @@ your cluster management UI (for example, on console.redhat.com)
 4) Wait for the Operator to finish installing
 
 
-## OpenShift AI 3.X
-Use the following steps for OpenShift AI 3.X:
+## OpenShift AI 2.25
+Use the following steps for OpenShift AI 2.25:
 
 ### OpenShift AI Prerequisties
 1) Install the Authorino Operator. At the time of writing, Authorino 0.11.1 is verified to be compatible.
 2) Install the Red Hat OpenShift Serverless operator.
 3) Install the Red Hat OpenShift Service Mesh operator.
 
-### Install OpenShift AI 3.X
+### Install OpenShift AI 2.25
 1) Navigate to your `redhat-ods-operator` project
 2) From "Installed Operators", select "Red Hat OpenShift AI".
 3) Navigate to the "DSC Initialization" tab and hit "Create DSCInitialization", then install the default DSCI. Once the DSCI reports "Ready", move on to step 4. 
@@ -91,11 +91,11 @@ oc patch configmap inferenceservice-config \
 This will ensure that the deployed model controller will use the injected Trusted CA bundle, enabling encrypted (TLS) logging for TrustyAI integration.
 
 > **Note:**  
-> * Be sure that `resources/kserve-logger-ca-bundle.yaml` has been applied to your cluster.  
+> * Be sure that `resources/kserve-logger-ca-bundle.yaml` has been applied to both namespaces `model-bias` and `model-drift`.  
 > * If you are not using RHOAI's example operator, consult your model controller's documentation for appropriate TLS CA injection steps.
 
 
 
-### Install TrustyAI (OpenShift AI 3.X)
+### Install TrustyAI (OpenShift AI 2.25)
 1) Navigate to your `model-bias` project or `model-drift` project: `oc project model-bias` or `oc project model-drift`
 2) Run `oc apply -f resources/trustyai_crd.yaml`to both the projects if you plan to demo both the features. This will install the TrustyAI Service into your `model-bias` and `model-drift` projects, which will then provide TrustyAI features to all subsequent models deployed into that project, such as explainability, fairness monitoring, and data drift monitoring. 
