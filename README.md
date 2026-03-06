@@ -10,15 +10,15 @@ This repo contains a variety of demos showcasing TrustyAI's capabilities within 
 1) [Installing RHOAI and TrustyAI](1-Installation/README.md): How to install OpenShift AI and TrustyAI on your cluster.
 2) [Bias Monitoring](2-BiasMonitoring/kserve-demo/README.md): How to use TrustyAI to examine your deployed models for unfair biases.
 3) [Data Drift](3-DataDrift/kserve-demo/README.md): How to detect if the production data your models are receiving matches the data they were trained on.
-4) [Guardrails-quickstart-demo](4-Guardrails/guardrails-quickstart-demo/README.md):
-5) [Guardrails-language-detector-demo](4-Guardrails/guardrails-language-detector-demo/README.md):
-6) [Guardrails-pii-llamastack-demo](4-Guardrails/guardrails-pii-llamastack-demo/README.md):
-7) [eval-quickstart-demo](5-LM-Eval/eval-quickstart-demo/README.md):
-8) [eval-with-llamastack-demo](5-LM-Eval/evals-with-llamastack-demo/README.md):  
+4) [Guardrails-quickstart-demo](4-Guardrails/guardrails-quickstart-demo/README.md): A quickstart walkthrough on enabling TrustyAI Guardrails to protect your LLM applications.
+5) [Guardrails-language-detector-demo](4-Guardrails/guardrails-language-detector-demo/README.md): Use a language detection model as a guardrail to restrict allowed input/output languages.
+6) [Guardrails-pii-llamastack-demo](4-Guardrails/guardrails-pii-llamastack-demo/README.md): Implement PII detection guardrails with a Llama-Stack to sanitize sensitive information from LLM responses.
+7) [eval-quickstart-demo](5-LM-Eval/eval-quickstart-demo/README.md): Quick evaluation of LLM outputs using TrustyAI's integrated evaluation tools.
+8) [eval-with-llamastack-demo](5-LM-Eval/evals-with-llamastack-demo/README.md): Evaluate LLMs deployed with LlamaStack using TrustyAI's evaluation workflows.
 
 ## Demos Coming Soon
-8) Anomaly Detection [Coming Soon]: How to identify and log anomalous inbound data, such as to clean or enrich your training data.
-9) Explainability [Coming Soon]: How to get per-point explanations of your models' predictions.
+9) Anomaly Detection [Coming Soon]: How to identify and log anomalous inbound data, such as to clean or enrich your training data.
+10) Explainability [Coming Soon]: How to get per-point explanations of your models' predictions.
 
 ## Acknowledgements
 
